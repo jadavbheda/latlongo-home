@@ -482,15 +482,13 @@
             <h4 class="classic-title"><span>Contact Us</span></h4>
 
             <!-- Start Contact Form -->
-            <form action="http://formspree.io/jadav.bheda@gmail.com">
-  <input type="email" name="_replyto">
-  <textarea name="body"></textarea>
-  <input type="submit" value="Send">
-</form>
-            <form role="form" class="contact-form" id="contact-form" method="post">
+            <form class="contact-form" id="contact-form" action="http://formspree.io/jadav.bheda@gmail.com" method='post'>
+  
+  
+
               <div class="form-group">
                 <div class="controls">
-                  <input type="text" placeholder="Name" name="name">
+                  <input type="email" name="_replyto">
                 </div>
               </div>
               <div class="form-group">
@@ -507,9 +505,10 @@
               <div class="form-group">
 
                 <div class="controls">
-                  <textarea rows="7" placeholder="Message" name="message"></textarea>
+                  <textarea rows="7" placeholder="Message" name="body"></textarea>
                 </div>
               </div>
+            <!-- <input type="submit" value="Send"> -->
               <button type="submit" id="submit" class="btn-system btn-large">Send</button>
               <div id="success" style="color:#34495e;"></div>
             </form>
